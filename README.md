@@ -21,6 +21,15 @@ sa propre horloge à jour ; le bip confirme l'opération. La page officielle se
 rafraîchit toutes les secondes — ce programme fait pareil, en local, sans
 connexion internet, et aligne l'affichage sur les frontières de secondes.
 
+## Version web (double-clic)
+
+`qr_time_sync.html` — page unique autonome (~23 Ko) : HTML + JavaScript embarqués,
+**aucune installation ni connexion requise**. Elle s'ouvre d'un double-clic dans
+n'importe quel navigateur (file://) ; `F11` passe en plein écran pour un scan
+facile. Généateur embarqué : *qrcode-generator* v1.5.2 (MIT) © Kazuhiko Arase —
+la même famille de bibliothèque que la page officielle Eyoyo. Rafraîchissement
+aligné sur les frontières de secondes et fond blanc, comme le script terminal.
+
 ## Installation
 
 Fait une fois (venv dédié, sans toucher à la distribution Python). Avec `uv`
